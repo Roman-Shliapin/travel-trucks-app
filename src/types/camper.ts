@@ -57,6 +57,6 @@ export interface CamperFilters {
 export interface BookingRequest {
   name: string;
   email: string;
-  date: string;
+  date?: string;
   comment?: string;
 }

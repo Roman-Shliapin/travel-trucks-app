@@ -1,0 +1,129 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  color: #101828;
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 14px 14px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #101828;
+  background: #f7f7f7;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #101828;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.groupLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  margin: 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #101828;
+  cursor: pointer;
+}
+
+.radio {
+  width: 18px;
+  height: 18px;
+  accent-color: #101828;
+  cursor: pointer;
+}
+
+.applyBtn {
+  background: #829b91;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.applyBtn:hover {
+  background: #6d7b75;
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clearBtn:hover {
+  background: #f7f7f7;
+  border-color: #101828;
+}

@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 64px;
+  gap: 458px;
+  height: 72px;
+  background: #f7f7f7;
+  /* border-bottom: 1px solid #2b3345; */
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  color: #101828;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #829b91;
+}
