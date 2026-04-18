@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TravelTrucks
+
+A frontend web application for TravelTrucks — a campervan rental company.
+
+## Features
+
+- **Home page** with a hero banner and a call-to-action button
+- **Catalog page** with a list of available campervans
+  - Filter by location, body type, engine, and transmission
+  - Load More pagination (4 items per page)
+- **Camper details page** with:
+  - Image gallery (Swiper thumbs)
+  - Vehicle specs and amenities
+  - User reviews with star ratings
+  - Booking form with success notification
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org/) — App Router
+- [TypeScript](https://www.typescriptlang.org/)
+- [TanStack Query](https://tanstack.com/query) — `useInfiniteQuery` for paginated requests
+- [Swiper](https://swiperjs.com/) — image gallery
+- [React Hook Form](https://react-hook-form.com/) — booking form
+- [React Hot Toast](https://react-hot-toast.com/) — notifications
+- [React Icons](https://react-icons.github.io/react-icons/) — icons
+- CSS Modules — styling
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/travel-trucks-app.git
+
+# Navigate to the project folder
+cd travel-trucks-app
+
+# Install dependencies
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+| Route | Description |
+|-------|-------------|
+| `/` | Home page with hero banner |
+| `/catalog` | Campervan catalog with filters |
+| `/catalog/[camperId]` | Camper details, gallery, reviews, booking |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses the [Campers API](https://campers-api.goit.study/docs).
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Roman Shliapin

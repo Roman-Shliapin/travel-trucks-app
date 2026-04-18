@@ -7,6 +7,7 @@ import { Gallery } from '@/components/Gallery/Gallery';
 import { Reviews } from '@/components/Reviews/Reviews';
 import { BookingForm } from '@/components/BookingForm/BookingForm';
 import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { Loader } from '@/components/Loader/Loader';
 import styles from './camper.module.css';
 
 interface Props {
@@ -26,13 +27,12 @@ export default function CamperPage({ params }: Props) {
     queryFn: () => getCamperReviews(camperId),
   });
 
-  if (isLoading) return <p className={styles.loading}>Loading...</p>;
+  if (isLoading) return <Loader />;
   if (!camper) return <p className={styles.loading}>Camper not found</p>;
 
   return (
     <div className={styles.page}>
 
-      {/* Верхня секція: галерея (ліво) + інфо (право) */}
       <div className={styles.top}>
         <div className={styles.galleryCol}>
           <Gallery images={camper.gallery} />
@@ -55,7 +55,6 @@ export default function CamperPage({ params }: Props) {
           <p className={styles.price}>€{camper.price.toLocaleString()}</p>
           <p className={styles.description}>{camper.description}</p>
 
-          {/* Vehicle details */}
           <div className={styles.details}>
             <h2 className={styles.detailsTitle}>Vehicle details</h2>
 
@@ -95,7 +94,6 @@ export default function CamperPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Нижня секція: відгуки (ліво) + форма (право) */}
       <div className={styles.bottom}>
         <h2 className={styles.sectionTitle}>Reviews</h2>
         <div className={styles.bottomContent}>

@@ -6,6 +6,7 @@ import { getCampers } from '@/lib/api';
 import { CamperFilters } from '@/types/camper';
 import { CamperCard } from '@/components/CamperCard/CamperCard';
 import { Filters } from '@/components/Filters/Filters';
+import { Loader } from '@/components/Loader/Loader';
 import styles from './catalog.module.css';
 
 export default function CatalogPage() {
@@ -39,7 +40,7 @@ export default function CatalogPage() {
 
             <main className={styles.content}>
                 {isLoading ? (
-                    <p className={styles.loading}>Loading...</p>
+                    <Loader />
                 ) : (
                     <>
                         <ul className={styles.list}>
