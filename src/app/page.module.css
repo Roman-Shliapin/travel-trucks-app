@@ -54,11 +54,20 @@
   background: #829b91;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
-    padding: 0 24px;
+    padding: 40px 20px;
     align-items: flex-end;
-    padding-bottom: 48px;
   }
 
   .heroContent {
@@ -67,10 +76,15 @@
   }
 
   .title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -177,3 +177,22 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .page {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .specs {
+    font-size: 14px;
+  }
+}

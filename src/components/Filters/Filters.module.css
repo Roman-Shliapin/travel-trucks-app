@@ -127,3 +127,23 @@
   background: #f7f7f7;
   border-color: #101828;
 }
+
+@media (max-width: 1024px) {
+  .options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .radioLabel {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .radio {
+    display: none;
+  }
+}

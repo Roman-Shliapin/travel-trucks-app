@@ -73,3 +73,13 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 16px;
+  }
+
+  .loadMore {
+    width: 100%;
+  }
+}

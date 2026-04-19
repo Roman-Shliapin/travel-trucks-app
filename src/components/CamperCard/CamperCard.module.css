@@ -118,11 +118,26 @@
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
+    padding: 16px;
+    gap: 16px;
   }
 
   .imageWrapper {
     width: 100%;
     min-width: unset;
-    height: 220px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
