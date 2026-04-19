@@ -43,22 +43,29 @@ export default function CatalogPage() {
                     <Loader />
                 ) : (
                     <>
-                        <ul className={styles.list}>
-                            {campers.map((camper) => (
-                                <li key={camper.id}>
-                                    <CamperCard camper={camper} />
-                                </li>
-                            ))}
-                        </ul>
+                        {campers.length === 0 ? (
+                            <p className={styles.empty}>No campers found. Try changing filters.</p>
+                        ) : (
+                            <ul className={styles.list}>
+                                {campers.map((camper) => (
+                                    <li key={camper.id}>
+                                        <CamperCard camper={camper} />
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
 
                         {hasNextPage && (
-                            <button
-                                className={styles.loadMore}
-                                onClick={() => fetchNextPage()}
-                                disabled={isFetchingNextPage}
-                            >
-                                {isFetchingNextPage ? 'Loading...' : 'Load more'}
-                            </button>
+                            isFetchingNextPage ? (
+                                <Loader />
+                            ) : (
+                                <button
+                                    className={styles.loadMore}
+                                    onClick={() => fetchNextPage()}
+                                >
+                                    Load more
+                                </button>
+                            )
                         )}
                     </>
                 )}

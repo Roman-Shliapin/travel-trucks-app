@@ -1,9 +1,8 @@
 .header {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding: 24px 64px;
-  gap: 458px;
+  padding: 0 64px;
   height: 72px;
   background: #f7f7f7;
 }
@@ -16,6 +15,9 @@
 .nav {
   display: flex;
   gap: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .link {
@@ -29,4 +31,15 @@
 
 .link:hover {
   color: #829b91;
+}
+
+.active {
+  color: #829b91;
+}
+
+@media (max-width: 768px) {
+  .header {
+    gap: 24px;
+    padding: 16px 24px;
+  }
 }

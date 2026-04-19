@@ -2,7 +2,7 @@
   display: flex;
   gap: 24px;
   padding: 24px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dadde1;
   border-radius: 20px;
   background: #fff;
 }
@@ -113,4 +113,16 @@
   font-size: 14px;
   color: #101828;
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    min-width: unset;
+    height: 220px;
+  }
 }

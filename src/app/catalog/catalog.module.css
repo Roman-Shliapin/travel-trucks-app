@@ -29,22 +29,47 @@
 }
 
 .loadMore {
-  background: #829b91;
-  border: none;
-  color: #fff;
+  background: transparent;
+  border: 1px solid #dadde1;
+  color: #101828;
   padding: 14px 40px;
   border-radius: 200px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 .loadMore:hover {
-  background: #6e8a80;
+  border: 1px solid #6d7b75;
 }
 
 .loading {
   color: #475467;
   font-size: 18px;
+}
+
+.empty {
+  color: #475467;
+  font-size: 18px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    padding: 16px 24px;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .content {
+    padding: 24px;
+  }
 }

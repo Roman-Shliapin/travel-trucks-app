@@ -157,3 +157,23 @@
   font-size: 18px;
   color: #475467;
 }
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .infoCol {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+  }
+}
